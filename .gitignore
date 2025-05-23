@@ -1,0 +1,40 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+
+
+1.2_over_match_Video.mp4
+/Crciket_ball_tracking/*
+!/Crciket_ball_tracking/Cricket-ball-tracking-updated-main/runs/detect/train2/weights/best.pt
+/Cricket_Shot_Detection_vivit_finetuned_1/*
+upload/*
+videomae-base-finetuned-Custom_Dataset_Finetune/*
+vivit-b-16x2-kinetics400-Finetune_10Shots/*
+vivit-b-16x2-kinetics400-finetuned-cricket_shot_detection_feb/*
+Cricket_Shot_Detection_vivit_finetuned_1/*
+/New folder
+
+
+
+
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

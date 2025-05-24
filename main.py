@@ -23,11 +23,11 @@ model = YOLO("Yolov8_model.pt")
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
 
-ball_model = YOLO('Crciket_ball_tracking/Cricket-ball-tracking-updated-main/runs/detect/train2/weights/best.pt')
+ball_model = YOLO('best.pt')
 ball_model.to(device)
 
 
-local_model_dir_MAE = "./videomae-base-finetuned-Custom_Dataset_Finetune"
+# local_model_dir_MAE = "./videomae-base-finetuned-Custom_Dataset_Finetune"
 # local_model_vivit = "./Cricket_Shot_Detection_vivit_finetuned_1"
 local_model_vivit = "./vivit-b-16x2-kinetics400-Finetune_10Shots"
 
@@ -38,7 +38,7 @@ processor_load = VivitImageProcessor.from_pretrained(local_model_vivit)
 
 
 # Load the model from the local directory
-model_load_VideoMAE = VideoMAEForVideoClassification.from_pretrained(local_model_dir_MAE).to(device)
+# model_load_VideoMAE = VideoMAEForVideoClassification.from_pretrained(local_model_dir_MAE).to(device)
 model_load_vivit = VivitForVideoClassification.from_pretrained(local_model_vivit).to(device)
 
 

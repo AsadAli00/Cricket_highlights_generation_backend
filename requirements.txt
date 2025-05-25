@@ -1,10 +1,18 @@
 Flask==2.3.2
 Flask-Cors==3.0.10
+<<<<<<< HEAD
 torch==2.0.1 
 torchvision==0.15.2
 opencv-python==4.7.0.72 
 ultralytics==8.0.122
 transformers==4.30.2
+=======
+# torch==2.0.1 
+# torchvision==0.15.2
+# opencv-python==4.7.0.72 
+# ultralytics==8.0.122
+# transformers==4.30.2
+>>>>>>> cf9e4a5bc88fc09caf3be65a035dda16d737e846
 werkzeug==2.3.6
 numpy==1.24.3
 gunicorn
